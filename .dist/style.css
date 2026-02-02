@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+    background: #f0f4f8;
+}
+
+.page-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 280px;
+    background: #37474f;
+    color: #fff;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.brand-icon {
+    font-size: 24px;
+}
+
+.brand h1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.intro {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 25px;
+}
+
+.quick-links {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.quick-links li {
+    padding: 10px 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.quick-links li:hover {
+    color: #fff;
+}
+
+.faq-section,
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.faq-section h3,
+.contact-info h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.faq-section p,
+.contact-info p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 6px;
+}
+
+.hours {
+    margin-top: auto;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Chat Area */
+.chat-area {
+    flex: 1;
+    display: flex;
+    padding: 0;
+    background: #a8d8ea;
+}
+
+.chat-box {
+    width: 100%;
+    height: 100vh;
+    background: #1e272e;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background: #151a1e;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.agent-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background: #37474f;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.agent-info h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.online-badge {
+    font-size: 12px;
+    color: #00b894;
+}
+
+/* Messages */
+.messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #1e272e;
+}
+
+.msg {
+    max-width: 75%;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+.msg p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #ecf0f1;
+}
+
+.timestamp {
+    font-size: 11px;
+    color: #95a5a6;
+    display: block;
+    margin-top: 5px;
+}
+
+.msg-bot {
+    background: #2d3436;
+    border-radius: 8px 8px 8px 2px;
+}
+
+.msg-user {
+    background: #6c5ce7;
+    color: #fff;
+    margin-left: auto;
+    border-radius: 8px 8px 2px 8px;
+}
+
+.msg-user p {
+    color: #fff;
+}
+
+.msg-user .timestamp {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Typing indicator */
+.typing-indicator {
+    display: flex;
+    gap: 5px;
+    padding: 12px 15px;
+    background: #2d3436;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.typing-indicator span {
+    width: 7px;
+    height: 7px;
+    background: #0984e3;
+    border-radius: 50%;
+}
+
+/* Input */
+.input-bar {
+    display: flex;
+    padding: 15px;
+    background: #1e272e;
+    border-top: 1px solid #34495e;
+    gap: 10px;
+}
+
+#userInput {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #34495e;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    background: #2d3436;
+    color: #ecf0f1;
+}
+
+#userInput:focus {
+    border-color: #0984e3;
+}
+
+#sendBtn {
+    padding: 12px 24px;
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#sendBtn:hover {
+    background: #e67e22;
+}
+
+/* Scrollbar */
+.messages::-webkit-scrollbar {
+    width: 5px;
+}
+
+.messages::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+.messages::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+}

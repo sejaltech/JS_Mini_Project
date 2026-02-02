@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <aside class="sidebar">
+            <div class="brand">
+                <span class="brand-icon">✉</span>
+                <h1>HelpDesk</h1>
+            </div>
+            
+            <p class="intro">Got questions? We're here to help with orders, shipping, refunds and more.</p>
+            
+            <ul class="quick-links">
+                <li>Track your order</li>
+                <li>Return policy</li>
+                <li>Payment options</li>
+                <li>Contact us</li>
+            </ul>
+            
+            <div class="faq-section">
+                <h3>FAQs</h3>
+                <p>How long does shipping take?</p>
+                <p>How do I return an item?</p>
+                <p>What payment methods do you accept?</p>
+            </div>
+            
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>📧 support@helpdesk.com</p>
+                <p>📞 +91 7575757575</p>
+            </div>
+            
+            <div class="hours">
+                <strong>Hours:</strong> Mon-Fri 9am-6pm
+            </div>
+        </aside>
+    
+        <main class="chat-area">
+            <div class="chat-box">
+                <header class="chat-header">
+                    <div class="agent-info">
+                        <div class="avatar">S</div>
+                        <div>
+                            <h2>Support</h2>
+                            <span class="online-badge">Online</span>
+                        </div>
+                    </div>
+                </header>
+                
+                <div class="messages" id="chatMessages">
+                    <div class="msg msg-bot">
+                        <p>Hi there! How can I help you today?</p>
+                        <span class="timestamp">Just now</span>
+                    </div>
+                </div>
+                
+                <div class="input-bar">
+                    <input type="text" id="userInput" placeholder="Type a message..." autocomplete="off">
+                    <button id="sendBtn">Send</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
